@@ -1,11 +1,7 @@
 class RoutesNames {
-  static const String splash_screen="Splash_Screen";
-  static const String login_screen="Login_Screen";
-  static const String register_screen="Register_screen";
-  static const String get_started = "GetStarted";
-  static const String forget_password = "forget_password";
-
-
-
-
+  static const String splashScreen = "Splash_Screen";
+  static const String loginScreen = "Login_Screen";
+  static const String registerScreen = "Register_screen";
+  static const String getStarted = "GetStarted";
+  static const String forgetPassword = "forget_password";
 }
