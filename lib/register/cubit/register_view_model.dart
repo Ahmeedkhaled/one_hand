@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:one_hand/register/cubit/register_states.dart';
 
-class RegisterViewModal extends Cubit<RegisterState> {
-  RegisterViewModal() : super(RegisterInitalState());
+class RegisterCubit extends Cubit<RegisterState> {
+  RegisterCubit() : super(RegisterInitalState());
   bool isObscure = true;
   DateTime selectedDate = DateTime.now();
   var formKey = GlobalKey<FormState>();
@@ -22,6 +22,7 @@ class RegisterViewModal extends Cubit<RegisterState> {
       }
     } catch (e) {}
   }
+
   void showCalender(BuildContext context) async {
     var choosenDate = await showDatePicker(
         context: context,
@@ -30,6 +31,7 @@ class RegisterViewModal extends Cubit<RegisterState> {
         lastDate: DateTime.now());
     if (choosenDate != null) {
       selectedDate = choosenDate;
+    
     }
   }
 }

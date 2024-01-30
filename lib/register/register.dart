@@ -15,12 +15,12 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  RegisterViewModal viewModel = RegisterViewModal();
+  RegisterCubit registerCubit = RegisterCubit();
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<RegisterViewModal, RegisterState>(
-      bloc: viewModel,
+    return BlocListener<RegisterCubit, RegisterState>(
+      bloc: registerCubit,
       listener: (context, state) {},
       child: Scaffold(
           body: SafeArea(
@@ -46,13 +46,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
             height: MediaQuery.of(context).size.height * 0.03,
           ),
           Form(
-            key: viewModel.formKey,
+            key: registerCubit.formKey,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 TextFieldWidget(
                     fieldName: "Name ",
-                    controller: viewModel.nameController,
+                    controller: registerCubit.nameController,
                     hintText: "Enter Your Name",
                     validator: (value) {
                       if (value == null || value.trim().isEmpty) {
@@ -62,7 +62,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     }),
                 TextFieldWidget(
                     fieldName: "Email",
-                    controller: viewModel.emailController,
+                    controller: registerCubit.emailController,
                     hintText: "Enter Your email",
                     keyBoardType: TextInputType.emailAddress,
                     validator: (value) {
@@ -80,7 +80,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 TextFieldWidget(
                     keyBoardType: TextInputType.number,
                     fieldName: "Mobile Number",
-                    controller: viewModel.numberController,
+                    controller: registerCubit.numberController,
                     hintText: "enter Your Mobile",
                     validator: (value) {
                       if (value == null || value.trim().isEmpty) {
@@ -108,7 +108,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    viewModel.showCalender(context);
+                    registerCubit.showCalender(context);
                     setState(() {});
                   },
                   child: Padding(
@@ -124,7 +124,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "${viewModel.selectedDate.month}/${viewModel.selectedDate.day}/${viewModel.selectedDate.year}",
+                              "${registerCubit.selectedDate.month}/${registerCubit.selectedDate.day}/${registerCubit.selectedDate.year}",
                               style: Theme.of(context).textTheme.titleSmall,
                             ),
                             const Icon(Icons.calendar_month)
@@ -155,7 +155,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       horizontal: MediaQuery.of(context).size.width * 0.2),
                   child: ElevatedButton(
                     onPressed: () {
-                      viewModel.register();
+                      registerCubit.register();
+                      Navigator.of(context)
+                          .pushNamed(RoutesNames.secondRegister);
                     },
                     style: ButtonStyle(
                       backgroundColor:
@@ -168,7 +170,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       // style: TextStyle(color: MyTheme.whiteColor, fontSize: 18),
                     ),
                   ),
-                )
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                InkWell(
+                  onTap: () => Navigator.of(context)
+                      .pushReplacementNamed(RoutesNames.loginScreen),
+                  child: Center(
+                    child: Text(
+                      "You already have account?",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleSmall!
+                          .copyWith(color: MyTheme.blackColor, fontSize: 16),
+                    ),
+                  ),
+                ),
               ],
             ),
           )

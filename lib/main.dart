@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:one_hand/get_started/get_start.dart';
 import 'package:one_hand/login/forget_password.dart';
 import 'package:one_hand/login/login.dart';
 import 'package:one_hand/my_theme.dart';
 import 'package:one_hand/register/register.dart';
 import 'package:one_hand/core/routes.dart';
+import 'package:one_hand/register/second_register.dart';
 import 'package:one_hand/splash/splash_screen.dart';
-
-import 'login/cubit/login_view_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +26,9 @@ class MyApp extends StatelessWidget {
         RoutesNames.loginScreen: (context) => const LogInScreen(),
         RoutesNames.registerScreen: (context) => const RegisterScreen(),
         RoutesNames.forgetPassword: (context) => ForgetPassword(),
+        RoutesNames.secondRegister: (context) => const SecondRegister(),
       },
-      theme:
-       MyTheme.lightMode,
+      theme: MyTheme.lightMode,
     );
   }
 }

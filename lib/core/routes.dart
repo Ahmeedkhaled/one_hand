@@ -4,4 +4,6 @@ class RoutesNames {
   static const String registerScreen = "Register_screen";
   static const String getStarted = "GetStarted";
   static const String forgetPassword = "forget_password";
+    static const String secondRegister = "second_register";
+
 }
