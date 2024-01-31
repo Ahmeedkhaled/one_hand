@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyTheme {
   static Color grayColor = const Color(0xff8E8E8E);
-  static Color blackColor = const Color(0xff020202);
+  static Color blackColor = const Color.fromARGB(255, 0, 0, 0);
   static Color whiteColor = const Color(0xffeeeeee);
   static ThemeData lightMode = ThemeData(
       primaryColor: grayColor,
@@ -22,5 +22,17 @@ class MyTheme {
           color: Color(0xff777575),
           fontWeight: FontWeight.w700,
         ),
-      ));
+        bodyMedium: const TextStyle(
+          fontSize: 18,
+          color: Colors.white,
+          fontWeight: FontWeight.w700,
+      ),
+      bodySmall:  const TextStyle(
+          fontSize: 16,
+          color: Colors.white,
+          fontWeight: FontWeight.w300,
+      ),
+      ),
+      
+   );
 }

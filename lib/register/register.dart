@@ -179,7 +179,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       .pushReplacementNamed(RoutesNames.loginScreen),
                   child: Center(
                     child: Text(
-                      "You already have account?",
+                      "Already have an account?",
                       style: Theme.of(context)
                           .textTheme
                           .titleSmall!

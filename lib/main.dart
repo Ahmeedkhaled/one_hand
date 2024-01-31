@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_hand/get_started/get_start.dart';
+import 'package:one_hand/home/home_page.dart';
 import 'package:one_hand/login/forget_password.dart';
 import 'package:one_hand/login/login.dart';
 import 'package:one_hand/my_theme.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: RoutesNames.splashScreen,
+      initialRoute: RoutesNames.homePage,
       routes: {
         RoutesNames.splashScreen: (context) => const SplashScreen(),
         RoutesNames.getStarted: (context) => const GetStart(),
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         RoutesNames.registerScreen: (context) => const RegisterScreen(),
         RoutesNames.forgetPassword: (context) => ForgetPassword(),
         RoutesNames.secondRegister: (context) => const SecondRegister(),
+        RoutesNames.homePage: (context) => const HomePage(),
       },
       theme: MyTheme.lightMode,
     );
