@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 3;
+  int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -55,5 +55,10 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  List<Widget> tabs = [ const Blog(),const Product(),const Jobs(),const Profile()];
+  List<Widget> tabs = [
+    const Blog(),
+    const Product(),
+    const Jobs(),
+    const Profile()
+  ];
 }

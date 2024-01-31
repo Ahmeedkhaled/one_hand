@@ -33,6 +33,7 @@ class BuildProfileInfo extends StatelessWidget {
           ],
         ),
         ElevatedButton(
+
           onPressed: () {},
           style: ElevatedButton.styleFrom(
             elevation: 0,

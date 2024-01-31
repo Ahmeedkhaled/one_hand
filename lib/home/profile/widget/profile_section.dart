@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:one_hand/my_theme.dart';
 
+// ignore: must_be_immutable
 class BuildSection extends StatelessWidget {
   String? title;
   String? count;
   VoidCallback? onTap;
-  BuildSection(
-      {super.key,
-      required this.title,
-      required this.count,
-      required this.onTap});
+  BuildSection({super.key, required this.title, required this.count, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

@@ -24,16 +24,23 @@ class _ProfileState extends State<Profile> {
               children: [
                 const BuildHeader(),
                 const BuildProfileInfo(),
-                BuildSection(title: "My Products",count: "102", onTap: () {  },),
+                BuildSection(
+                  title: "My Products",
+                  count: "102",
+                  onTap: () {},
+                ),
                 const Divider(thickness: 1, color: Color(0xffBAB1B1)),
-                BuildSection(title: "My Products",count: "102", onTap: () {  }),
+                BuildSection(title: "My Jobs", count: "904", onTap: () {}),
                 const Divider(thickness: 1, color: Color(0xffBAB1B1)),
-                BuildSection(title: "Notifications",count:  null, onTap: () { }),
+                BuildSection(title: "Notifications", count: null, onTap: () {}),
                 const Divider(thickness: 1, color: Color(0xffBAB1B1)),
-                BuildSection(title: "Log Out",count: null, onTap: () {
-                  Navigator.of(context)
-                      .pushReplacementNamed(RoutesNames.loginScreen);
-                }),
+                BuildSection(
+                    title: "Log Out",
+                    count: null,
+                    onTap: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed(RoutesNames.loginScreen);
+                    }),
               ],
             ),
           ),
@@ -41,5 +48,4 @@ class _ProfileState extends State<Profile> {
       ),
     );
   }
-
 }
