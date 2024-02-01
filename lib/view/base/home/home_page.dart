@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:one_hand/home/blog/blog.dart';
+import 'package:one_hand/view/base/home/blog/blog.dart';
 import 'package:one_hand/view/base/home/jobs/jobs.dart';
 import 'package:one_hand/view/base/home/product/product.dart';
 import 'package:one_hand/view/base/home/profile/profile.dart';
