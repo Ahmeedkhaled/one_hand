@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:one_hand/get_started/get_start.dart';
-import 'package:one_hand/home/home_page.dart';
-import 'package:one_hand/login/forget_password.dart';
-import 'package:one_hand/login/login.dart';
+import 'package:one_hand/core/utils/routes.dart';
 import 'package:one_hand/my_theme.dart';
-import 'package:one_hand/register/register.dart';
-import 'package:one_hand/core/routes.dart';
-import 'package:one_hand/register/second_register.dart';
-import 'package:one_hand/splash/splash_screen.dart';
+import 'package:one_hand/view/base/auth/login/forget_password.dart';
+import 'package:one_hand/view/base/auth/login/login.dart';
+import 'package:one_hand/view/base/auth/register/register.dart';
+import 'package:one_hand/view/base/auth/register/second_register.dart';
+import 'package:one_hand/view/base/get_started/get_start.dart';
+import 'package:one_hand/view/base/home/home_page.dart';
+import 'package:one_hand/view/base/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
