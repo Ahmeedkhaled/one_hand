@@ -17,7 +17,7 @@ dependencies:
   drop_down_list: ^0.0.6
   salomon_bottom_bar: ^3.3.2 
   # For toast ui here
-  fluttertoast: ^8.0.9
+  # fluttertoast: ^8.2.4
   # Save data here
   shared_preferences: ^2.0.6
   # APi && Network here
@@ -26,6 +26,8 @@ dependencies:
   # State managment here
   flutter_bloc: ^8.1.3
   bloc: ^8.1.2
+  # fonts 
+  google_fonts: ^6.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -38,6 +40,10 @@ flutter:
   assets:
     - assets/images/
   fonts:
-    - family: Schyler
+    - family: Inter
       fonts:
         - asset: assets/fonts/static/Inter-Regular.ttf
+  # fonts:
+  #   - family: Quicksand
+  #     fonts:
+  #       - asset: assets/fonts/quickSand/Quicksand-Regular.ttf

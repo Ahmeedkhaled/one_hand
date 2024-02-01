@@ -4,7 +4,6 @@ import 'package:one_hand/view/base/home/blog/widget/blog_header.dart';
 import 'package:one_hand/view/base/home/blog/widget/blog_post.dart';
 import 'package:one_hand/view/base/home/blog/widget/blog_search.dart';
 
-
 class Blog extends StatefulWidget {
   const Blog({Key? key}) : super(key: key);
 
@@ -25,10 +24,17 @@ class _BlogState extends State<Blog> {
               children: [
                 const BlogHeader(),
                 const BlogSearch(),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.04),
                 const BlogPost(),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.004),
                 const BlogFooter(),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.04),
                 const BlogPost(),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.004),
+                const BlogFooter(),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+                const BlogPost(),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.004),
                 const BlogFooter(),
               ],
             ),
