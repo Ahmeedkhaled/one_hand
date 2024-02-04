@@ -126,13 +126,18 @@ class Notifications extends StatelessWidget {
                         SizedBox(
                           height: MediaQuery.of(context).size.height * 0.04,
                         ),
-                        Text(
-                          "Tap  to view profile ",
-                          style: GoogleFonts.quicksand(
-                              textStyle: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium!
-                                  .copyWith(fontWeight: FontWeight.w700)),
+                        InkWell(
+                          onTap: (){
+                            //go to your profile
+                          },
+                          child: Text(
+                            "Tap  to view profile ",
+                            style: GoogleFonts.quicksand(
+                                textStyle: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium!
+                                    .copyWith(fontWeight: FontWeight.w700)),
+                          ),
                         ),
                       ],
                     ),
