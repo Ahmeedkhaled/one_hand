@@ -1,16 +1,10 @@
 # one_hand
 
-A new Flutter project.
+Project For help.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+"One-Hand" – your go-to application for assisting individuals in finding employment opportunities, powered by robust API integration.
+Stay informed with instant notifications regarding new job openings, streamlining the search and application process.
+Easily create and edit posts, manage your profile details, and enhance your visibility by adding photos and uploading resumes.
+"One-Hand" empowers users to download ready-made resumes, facilitating seamless access to employment prospects with confidence.
