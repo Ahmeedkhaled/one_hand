@@ -1,6 +1,6 @@
 # one_hand
 
-Project For help.
+Project For help People.
 
 ![OneHand@3x](https://github.com/alisharaff/one_hand_version_one/assets/77925806/5d66dd34-a501-4c75-ab11-5e5b007118b1)
 
